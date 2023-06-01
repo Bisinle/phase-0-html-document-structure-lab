@@ -94,7 +94,7 @@ describe("index.html", () => {
       const report = validator.validateString(html);
 
       let errorReport;
-      if (report.results.length > 0) {
+      if (report.results.length >0) {
         errorReport = report.results[0].messages
           .map((m) => m.message)
           .join("\n\t");
